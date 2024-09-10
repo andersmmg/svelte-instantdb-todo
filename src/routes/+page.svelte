@@ -3,8 +3,8 @@
     import { init, tx, id } from '@instantdb/core';
   
     // ID for app: HK Test
-const APP_ID = "";
-  
+    const APP_ID = "";
+
     interface Todo {
       id: string;
       text: string;
