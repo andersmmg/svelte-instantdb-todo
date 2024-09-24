@@ -1,0 +1,12 @@
+version: "3.3"
+services:
+  sveltekit-bun-docker:
+    image: sveltekit-bun-docker
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    ports:
+      - 8001:3000
+    restart: unless-stopped
